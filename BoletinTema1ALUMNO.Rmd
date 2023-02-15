@@ -93,22 +93,31 @@ c.  Muestra los nombres de las filas y las columnas (**rownames**, **colnames**)
 
 ```{r}
 
+mam <- mammals
+ani <- Animals2
 
+dim(mam) # 62 filas y 2 columnas
+dim(ani) # 65 filas y 2 columnas
 
+# La funcion head muestra las 6 primeras observaciones
+head(mam)
+head(ani)
 
+# La funcion tail muestra las 6 ultimas observaciones
+tail(mam)
+tail(ani)
 
+# La funcion str muestra más informacion sobre la estructura de los datos, tipo de datos, dimension, nombre de las variables
+str(mam)
+str(ani)
 
+# rownames muestra los nombres de todos los animales en cada uno de los conjuntos de datos
+rownames(mam)
+rownames(ani)
 
-
-
-
-
-
-
-
-
-
-
+# colnames muestra los nombres de las diferentes variables del conjunto de datos
+colnames(mam)
+colnames(ani)
 ```
 
 d.  Usa la función **intersect** y almacena en la variable *commonAnimals* los aminales que aparezcan en ambos conjuntos
