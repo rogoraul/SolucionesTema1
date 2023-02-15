@@ -131,9 +131,8 @@ commonAnimals <- intersect(ani,mam)
 e.  Usa **setdiff** para averiguar qué animales no están en ambos conjuntos. ¿Cuántos son ?. ¿Qué tipo de animales son?
 
 ```{r}
-
-
-
+setdiff(mam,ani) # Todos los animales de mam estan en ani
+setdiff(ani,mam) # Hay 3 animales en ani que no estan en mam, son unos pequeños animalitos, dinosaurios
 
 
 
