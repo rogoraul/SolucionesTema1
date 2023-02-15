@@ -185,32 +185,26 @@ car::qqPlot(ani_log)
     d.  Utiliza la función **summary**, sobre **cabbages** y **Chile** y observa como, además de otros estadísticos, también devuelve el número de valores perdidos de cada variable.
 
 ```{r}
+library(MASS)
 
+str(cabbages) # 60 observaciones y 4 variables
 
+head(cabbages)
+tail(cabbages)
 
+colSums(is.na(cabbages))
+# No hay ningun na en el conjunto de datos
 
+str(Chile) # 60 observaciones y 4 variables
 
+head(Chile)
+tail(Chile)
 
+colSums(is.na(Chile))
+# Hay NA en 5 de las 8 variables
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+summary(cabbages)
+summary(Chile)
 
 ```
 
